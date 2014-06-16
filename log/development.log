@@ -171,3 +171,856 @@ Started GET "/" for 127.0.0.1 at 2014-06-16 16:21:31 -0400
 Processing by Rails::WelcomeController#index as HTML
   Rendered /usr/local/Cellar/ruby/2.1.0/lib/ruby/gems/2.1.0/gems/railties-4.0.1/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
 Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-16 16:29:49 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/Cellar/ruby/2.1.0/lib/ruby/gems/2.1.0/gems/railties-4.0.1/lib/rails/templates/rails/welcome/index.html.erb (1.1ms)
+Completed 200 OK in 5ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user" for 127.0.0.1 at 2014-06-16 16:29:56 -0400
+
+ActionController::RoutingError (No route matches [GET] "/user"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/Cellar/ruby/2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/Cellar/ruby/2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/Cellar/ruby/2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/Cellar/ruby/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /usr/local/Cellar/ruby/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /usr/local/Cellar/ruby/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.4ms)
+  Rendered /usr/local/Cellar/ruby/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (22.4ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-06-16 16:30:07 -0400
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 506ms (Views: 504.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-16 16:30:08 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-16 16:30:08 -0400
+
+
+Started GET "/assets/microposts.css?body=1" for 127.0.0.1 at 2014-06-16 16:30:08 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-16 16:30:08 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-06-16 16:30:08 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-16 16:30:08 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-16 16:30:08 -0400
+
+
+Started GET "/assets/microposts.js?body=1" for 127.0.0.1 at 2014-06-16 16:30:08 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-06-16 16:30:08 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-16 16:30:08 -0400
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-06-16 16:30:11 -0400
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (15.0ms)
+  Rendered users/new.html.erb within layouts/application (16.4ms)
+Completed 200 OK in 22ms (Views: 20.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-06-16 16:30:11 -0400
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (3.2ms)
+  Rendered users/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/microposts.css?body=1" for 127.0.0.1 at 2014-06-16 16:30:11 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-16 16:30:11 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-16 16:30:11 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-16 16:30:11 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-16 16:30:11 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-06-16 16:30:11 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-16 16:30:11 -0400
+
+
+Started GET "/assets/microposts.js?body=1" for 127.0.0.1 at 2014-06-16 16:30:11 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-06-16 16:30:11 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-16 16:30:11 -0400
+
+
+Started POST "/users" for 127.0.0.1 at 2014-06-16 16:30:22 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OAKj83ltZXD5NG/FiT7AIiQ1I1rXi1LLLd4jmbuYOuc=", "user"=>{"name"=>"test1", "email"=>"test@testing.org"}, "commit"=>"Create User"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (5.2ms)[0m  INSERT INTO "users" ("created_at", "email", "name", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Mon, 16 Jun 2014 20:30:22 UTC +00:00], ["email", "test@testing.org"], ["name", "test1"], ["updated_at", Mon, 16 Jun 2014 20:30:22 UTC +00:00]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 25ms (ActiveRecord: 5.9ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2014-06-16 16:30:22 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered users/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 8ms (Views: 5.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-16 16:30:22 -0400
+
+
+Started GET "/assets/microposts.css?body=1" for 127.0.0.1 at 2014-06-16 16:30:22 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-16 16:30:22 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-06-16 16:30:22 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-16 16:30:22 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-16 16:30:22 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-16 16:30:22 -0400
+
+
+Started GET "/assets/microposts.js?body=1" for 127.0.0.1 at 2014-06-16 16:30:22 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-06-16 16:30:22 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-16 16:30:22 -0400
+
+
+Started GET "/users" for 127.0.0.1 at 2014-06-16 16:30:24 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-06-16 16:30:24 -0400
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-16 16:30:24 -0400
+
+
+Started GET "/assets/microposts.css?body=1" for 127.0.0.1 at 2014-06-16 16:30:24 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-06-16 16:30:24 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-16 16:30:24 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-16 16:30:24 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-16 16:30:24 -0400
+
+
+Started GET "/assets/microposts.js?body=1" for 127.0.0.1 at 2014-06-16 16:30:24 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-06-16 16:30:24 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-16 16:30:24 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-16 16:30:24 -0400
+
+
+Started GET "/users/1" for 127.0.0.1 at 2014-06-16 16:30:26 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered users/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2014-06-16 16:30:26 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered users/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-16 16:30:27 -0400
+
+
+Started GET "/assets/microposts.css?body=1" for 127.0.0.1 at 2014-06-16 16:30:27 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-16 16:30:27 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-16 16:30:27 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-06-16 16:30:27 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-16 16:30:27 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-16 16:30:27 -0400
+
+
+Started GET "/assets/microposts.js?body=1" for 127.0.0.1 at 2014-06-16 16:30:27 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-06-16 16:30:27 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-16 16:30:27 -0400
+
+
+Started GET "/users" for 127.0.0.1 at 2014-06-16 16:30:29 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-06-16 16:30:29 -0400
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-16 16:30:29 -0400
+
+
+Started GET "/assets/microposts.css?body=1" for 127.0.0.1 at 2014-06-16 16:30:29 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-16 16:30:29 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-06-16 16:30:29 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-16 16:30:29 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-16 16:30:29 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-16 16:30:29 -0400
+
+
+Started GET "/assets/microposts.js?body=1" for 127.0.0.1 at 2014-06-16 16:30:29 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-16 16:30:29 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-06-16 16:30:29 -0400
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-06-16 16:31:54 -0400
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (2.5ms)
+  Rendered users/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-06-16 16:31:54 -0400
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (1.4ms)
+  Rendered users/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-16 16:31:54 -0400
+
+
+Started GET "/assets/microposts.css?body=1" for 127.0.0.1 at 2014-06-16 16:31:54 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-16 16:31:54 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-16 16:31:54 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-06-16 16:31:54 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-06-16 16:31:54 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-16 16:31:54 -0400
+
+
+Started GET "/assets/microposts.js?body=1" for 127.0.0.1 at 2014-06-16 16:31:54 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-16 16:31:54 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-16 16:31:54 -0400
+
+
+Started POST "/users" for 127.0.0.1 at 2014-06-16 16:32:11 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OAKj83ltZXD5NG/FiT7AIiQ1I1rXi1LLLd4jmbuYOuc=", "user"=>{"name"=>"test2", "email"=>"test2@testing.org"}, "commit"=>"Create User"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("created_at", "email", "name", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Mon, 16 Jun 2014 20:32:11 UTC +00:00], ["email", "test2@testing.org"], ["name", "test2"], ["updated_at", Mon, 16 Jun 2014 20:32:11 UTC +00:00]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 5ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2014-06-16 16:32:11 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered users/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-16 16:32:11 -0400
+
+
+Started GET "/assets/microposts.css?body=1" for 127.0.0.1 at 2014-06-16 16:32:11 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-16 16:32:11 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-06-16 16:32:11 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-16 16:32:11 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-16 16:32:11 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-16 16:32:11 -0400
+
+
+Started GET "/assets/microposts.js?body=1" for 127.0.0.1 at 2014-06-16 16:32:11 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-06-16 16:32:11 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-16 16:32:11 -0400
+
+
+Started GET "/users" for 127.0.0.1 at 2014-06-16 16:32:13 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-06-16 16:32:13 -0400
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/microposts.css?body=1" for 127.0.0.1 at 2014-06-16 16:32:13 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-06-16 16:32:13 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-16 16:32:13 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-16 16:32:13 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-16 16:32:13 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-16 16:32:13 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-16 16:32:13 -0400
+
+
+Started GET "/assets/microposts.js?body=1" for 127.0.0.1 at 2014-06-16 16:32:13 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-06-16 16:32:13 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-16 16:32:13 -0400
+
+
+Started GET "/users/2" for 127.0.0.1 at 2014-06-16 16:32:16 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2014-06-16 16:32:16 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered users/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-16 16:32:16 -0400
+
+
+Started GET "/assets/microposts.css?body=1" for 127.0.0.1 at 2014-06-16 16:32:16 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-16 16:32:16 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-06-16 16:32:16 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-16 16:32:16 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-16 16:32:16 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-16 16:32:16 -0400
+
+
+Started GET "/assets/microposts.js?body=1" for 127.0.0.1 at 2014-06-16 16:32:16 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-06-16 16:32:16 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-16 16:32:16 -0400
+
+
+Started GET "/users" for 127.0.0.1 at 2014-06-16 16:32:18 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-06-16 16:32:18 -0400
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-16 16:32:18 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-16 16:32:18 -0400
+
+
+Started GET "/assets/microposts.css?body=1" for 127.0.0.1 at 2014-06-16 16:32:18 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-16 16:32:18 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-06-16 16:32:18 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-16 16:32:18 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-16 16:32:18 -0400
+
+
+Started GET "/assets/microposts.js?body=1" for 127.0.0.1 at 2014-06-16 16:32:18 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-06-16 16:32:18 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-16 16:32:18 -0400
+
+
+Started DELETE "/users/1" for 127.0.0.1 at 2014-06-16 16:32:20 -0400
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"OAKj83ltZXD5NG/FiT7AIiQ1I1rXi1LLLd4jmbuYOuc=", "id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/users
+Completed 302 Found in 3ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-06-16 16:32:20 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-16 16:32:21 -0400
+
+
+Started GET "/assets/microposts.css?body=1" for 127.0.0.1 at 2014-06-16 16:32:21 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-16 16:32:21 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-06-16 16:32:21 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-16 16:32:21 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-16 16:32:21 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-16 16:32:21 -0400
+
+
+Started GET "/assets/microposts.js?body=1" for 127.0.0.1 at 2014-06-16 16:32:21 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-06-16 16:32:21 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-16 16:32:21 -0400
+
+
+Started GET "/users/2" for 127.0.0.1 at 2014-06-16 16:32:24 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered users/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2014-06-16 16:32:24 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 10ms (Views: 5.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-06-16 16:32:24 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-16 16:32:24 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-16 16:32:24 -0400
+
+
+Started GET "/assets/microposts.css?body=1" for 127.0.0.1 at 2014-06-16 16:32:24 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-16 16:32:24 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-16 16:32:24 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-16 16:32:24 -0400
+
+
+Started GET "/assets/microposts.js?body=1" for 127.0.0.1 at 2014-06-16 16:32:24 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-06-16 16:32:24 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-16 16:32:24 -0400
+
+
+Started GET "/users" for 127.0.0.1 at 2014-06-16 16:32:26 -0400
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-06-16 16:32:26 -0400
+
+
+Started GET "/assets/microposts.css?body=1" for 127.0.0.1 at 2014-06-16 16:32:26 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-16 16:32:26 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-16 16:32:26 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-16 16:32:26 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-16 16:32:26 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-16 16:32:26 -0400
+
+
+Started GET "/assets/microposts.js?body=1" for 127.0.0.1 at 2014-06-16 16:32:26 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-06-16 16:32:26 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-16 16:32:26 -0400
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-06-16 16:32:29 -0400
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (2.6ms)
+  Rendered users/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-06-16 16:32:29 -0400
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (2.1ms)
+  Rendered users/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-16 16:32:29 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-16 16:32:29 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-16 16:32:29 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-16 16:32:29 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-06-16 16:32:29 -0400
+
+
+Started GET "/assets/microposts.css?body=1" for 127.0.0.1 at 2014-06-16 16:32:29 -0400
+
+
+Started GET "/assets/microposts.js?body=1" for 127.0.0.1 at 2014-06-16 16:32:29 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-16 16:32:29 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-06-16 16:32:29 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-16 16:32:29 -0400
+
+
+Started POST "/users" for 127.0.0.1 at 2014-06-16 16:32:47 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OAKj83ltZXD5NG/FiT7AIiQ1I1rXi1LLLd4jmbuYOuc=", "user"=>{"name"=>"test100", "email"=>"test100@testing.org"}, "commit"=>"Create User"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("created_at", "email", "name", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Mon, 16 Jun 2014 20:32:47 UTC +00:00], ["email", "test100@testing.org"], ["name", "test100"], ["updated_at", Mon, 16 Jun 2014 20:32:47 UTC +00:00]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users/3
+Completed 302 Found in 6ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/users/3" for 127.0.0.1 at 2014-06-16 16:32:47 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "3"]]
+  Rendered users/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-16 16:32:47 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-16 16:32:47 -0400
+
+
+Started GET "/assets/microposts.css?body=1" for 127.0.0.1 at 2014-06-16 16:32:47 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-16 16:32:47 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-16 16:32:47 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-16 16:32:47 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-06-16 16:32:47 -0400
+
+
+Started GET "/assets/microposts.js?body=1" for 127.0.0.1 at 2014-06-16 16:32:47 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-16 16:32:47 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-06-16 16:32:47 -0400
+
+
+Started GET "/users" for 127.0.0.1 at 2014-06-16 16:32:49 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-06-16 16:32:49 -0400
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-16 16:32:49 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-16 16:32:49 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-06-16 16:32:49 -0400
+
+
+Started GET "/assets/microposts.css?body=1" for 127.0.0.1 at 2014-06-16 16:32:49 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-16 16:32:49 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-16 16:32:49 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-16 16:32:49 -0400
+
+
+Started GET "/assets/microposts.js?body=1" for 127.0.0.1 at 2014-06-16 16:32:49 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-06-16 16:32:49 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-16 16:32:49 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-16 16:33:05 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/Cellar/ruby/2.1.0/lib/ruby/gems/2.1.0/gems/railties-4.0.1/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/properties" for 127.0.0.1 at 2014-06-16 16:33:08 -0400
+Processing by Rails::InfoController#properties as */*
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  Rendered /usr/local/Cellar/ruby/2.1.0/lib/ruby/gems/2.1.0/gems/railties-4.0.1/lib/rails/templates/rails/info/properties.html.erb (0.3ms)
+Completed 200 OK in 10ms (Views: 6.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-16 16:39:17 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/Cellar/ruby/2.1.0/lib/ruby/gems/2.1.0/gems/railties-4.0.1/lib/rails/templates/rails/welcome/index.html.erb (0.0ms)
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-06-16 16:39:22 -0400
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-16 16:39:22 -0400
+
+
+Started GET "/assets/microposts.css?body=1" for 127.0.0.1 at 2014-06-16 16:39:22 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-06-16 16:39:22 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-16 16:39:22 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-16 16:39:22 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-16 16:39:22 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-16 16:39:22 -0400
+
+
+Started GET "/assets/microposts.js?body=1" for 127.0.0.1 at 2014-06-16 16:39:22 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-16 16:39:22 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-06-16 16:39:22 -0400
